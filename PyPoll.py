@@ -19,4 +19,3 @@ with open(read, 'r') as data:
 # See if I can find a way to automatically create the directory and file if it does not exist.
 with open(write, 'w') as output:
     output.write("Arapahoe\nDenver\nJefferson")
-#comment
