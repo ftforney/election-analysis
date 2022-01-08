@@ -37,6 +37,24 @@ This code was able to automatically go though the provided datafile to calculate
 
 The code can be easily modified to obtain other results. For example, if the party the candidate was in the dataset, we can grab that and display that. If we had the data for the type of vote used, we would be able to see the count of mail-in ballots, electronic votes, and punch card votes.
 
+## Some Code Review
+
+For the challenge, I opted to use the following for loop:
+```py
+for key, value in candidate_votes.items():
+        votes=value
+        vote_percentage = value / total_votes * 100
+        candidate_results = (f"{key}: {value / total_votes * 100:.1f}% ({value:,})\n")
+        print(candidate_results)
+        output.write(candidate_results)
+        if(votes>winning_count) and (vote_percentage>winning_percentage):
+            winning_count = votes
+            winning_percentage = vote_percentage
+            winning_candidate = key
+```
+
+I found it easier to use this type of loop to grab my keys and values since I don't need to do any extra work to obtain the value of a key I want, it's already there to be used.
+
 ## Resources
 - Data Source: election_results.csv
 - Software: Python 3.9.7, Atom 1.58.0
