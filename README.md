@@ -35,7 +35,7 @@ Here is the data we got from the election:
 
 This code was able to automatically go though the provided datafile to calculate the amount of votes each candidate got, see the vote count of various counties, and calculate a percentage for both of these. There was no effort needed to analyze the data, and this is a great tool for performing an election audit in the future!
 
-The code can be easily modified to obtain other results. For example, if the party the candidate is in was in the dataset, we can grab that and display that. If we had the data for the type of vote used, we would be able to see the count of mail-in ballots, electronic votes, and punch card votes.
+The code can be easily modified to obtain other results. For example, if the party the candidate was in the dataset, we can grab that and display that. If we had the data for the type of vote used, we would be able to see the count of mail-in ballots, electronic votes, and punch card votes.
 
 ## Resources
 - Data Source: election_results.csv
