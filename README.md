@@ -5,7 +5,7 @@ Python is going to be used during this project to analyze the results of various
 An employee from the Colorado Board of Elections has given us the tasks listed below to perform an election audit of a recent local congressional election.
 
 1. Calculate total number of votes cast.
-2. Get a complete list of candidates who recieved votes.
+2. Get a complete list of candidates who received votes.
 3. Calculate total number of votes each candidate received.
 4. Calculate percentage of votes each candidate won.
 5. Determine the winner of election based on popular vote.
